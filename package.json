@@ -10,11 +10,12 @@
     "preview": "vite preview",
     "prepare": "husky install",
     "pre-commit": "npm run lint",
-    "pre-push": "npm run release"
+    "pre-push": "npm run lint"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
     "formik": "^2.4.5",
+    "framer-motion": "^11.0.12",
     "jquery": "^3.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
