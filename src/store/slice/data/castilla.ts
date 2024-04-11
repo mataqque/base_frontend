@@ -1,4 +1,4 @@
-import { type IProject, validWhatsapp } from '../../store.interface';
+import { type IProject, type IName, validWhatsapp } from '../../store.interface';
 
 export const CASTILLA: IProject = {
 	project_id: 1,
@@ -9,3 +9,5 @@ export const CASTILLA: IProject = {
 	tipologioas: 'Vivienda',
 	status: 'En Lanzamiento',
 };
+
+console.log(CASTILLA);

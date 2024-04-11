@@ -25,15 +25,16 @@ export const validWhatsapp = (phone: string): INumberWhatsapp | null => {
 	};
 };
 
+export type IName = 'Castilla' | 'Monte Sierpe';
 export type IStage = 'Proximamente' | 'En Construcción' | 'En Lanzamiento' | 'Preventa' | 'Entrega Inmediata' | 'Vendido' | 'Inicio de Obra' | 'Próx. Entrega';
-
+export type UniqueProjectName = string & { readonly _unique: unique symbol };
 export interface IProjectBase {
 	project_id: number;
 	project_name: string;
 	address: string;
 	contact: string;
 	whatsapp: INumberWhatsapp | null;
-	tipologioas: string;
+	tipologies: string;
 }
 
 // export interface IProjectPhase<T extends IStage> extends IProjectBase {
@@ -58,5 +59,8 @@ export interface IProjectEnConstruccion extends IProjectBase {
 	status: 'En Construcción';
 	slider: string[];
 }
-
 export type IProject = IProjectProximamente | IProjectEnConstruccion | IProjectEnLanzamiento;
+
+// export const createUniqueProjectName = (name: string): UniqueProjectName => {
+// 	return name as UniqueProjectName;
+// };
