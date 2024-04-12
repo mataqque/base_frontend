@@ -15,7 +15,7 @@ export const SectionBanner = (): JSX.Element => {
 		slidesToScroll: 1,
 		variableWidth: false,
 		pauseOnHover: false,
-		beforeChange: (current: any, next: any) => {},
+		beforeChange: (_current: any, _next: any) => {},
 	};
 	return (
 		<section className='section-banner mb-20'>

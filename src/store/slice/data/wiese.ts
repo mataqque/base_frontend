@@ -1,8 +1,8 @@
-import { type IProject, type IName, validWhatsapp } from '../../store.interface';
-import render from '@/assets/multimedia/imagenes/fachada.png';
+import { type IProject, validWhatsapp } from '../../store.interface';
+import fachada from '@/assets/multimedia/imagenes/fachada.png';
 export const WIESE: IProject = {
 	project_id: 1,
-	project_name: 'Castilla',
+	project_name: 'Wiese',
 	contact: '123456',
 	whatsapp: validWhatsapp('+51123456789'),
 	status: 'Proximamente',
@@ -11,5 +11,5 @@ export const WIESE: IProject = {
 	address: 'JR. AUGUSTO WIESE 530',
 	meters: { from: 10, to: 10 },
 	dorms: ['1'],
-	render: render,
+	render: fachada,
 };

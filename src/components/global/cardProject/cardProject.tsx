@@ -1,8 +1,5 @@
 import Skeleton from 'react-loading-skeleton';
-import { useEffect, useState } from 'react';
-import { callbackDelay } from '@/helpers/helpers';
-import { useNavigate } from 'react-router';
-import { type Project } from '@/store/slice/data/combine';
+import { useState } from 'react';
 import { type IProject } from '@/store/store.interface';
 import { motion } from 'framer-motion';
 
@@ -12,18 +9,16 @@ interface IProps {
 }
 
 export const CardProject = ({ dataItem, dataindex }: IProps): JSX.Element => {
-	const navigate = useNavigate();
-	const color = 'red';
-	const [activeSkeleton, setActiveSkeleton] = useState<boolean>(true);
-	const { address, status, render, meters, dorms, district } = dataItem;
+	const [activeSkeleton, _setActiveSkeleton] = useState<boolean>(true);
+	const { address, status, render, district } = dataItem;
 
 	return (
 		<motion.div
 			key='title-home'
-			initial={{ y: 10, opacity: 0 }}
+			initial={{ y: 100, opacity: 0 }}
 			animate={{ y: 0, opacity: 1 }}
 			exit={{ y: 0, opacity: 0 }}
-			transition={{ duration: 0.8, type: 'keyframes', delay: 0.2 * dataindex, stiffness: 2000 }}
+			transition={{ duration: 1, type: 'tween', delay: 0.1 * dataindex, ease: 'easeOut' }}
 			className='content-card w-full'
 		>
 			<div className='card-item mb-4'>

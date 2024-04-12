@@ -12,7 +12,7 @@ const projectsSlice = createSlice({
 		addProject: (state, action: PayloadAction<Map<number, IProject>>) => {
 			state.projects = action.payload;
 		},
-		removeProject: (state, action: PayloadAction<number>) => {},
+		removeProject: (_state, _action: PayloadAction<number>) => {},
 	},
 });
 

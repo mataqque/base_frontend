@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './navbar.scss';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
-import MediaQuery from 'react-responsive';
+import { Link, NavLink } from 'react-router-dom';
 import { changeActive } from '@/helpers/helpers';
 import brand from '@/assets/multimedia/icons/icon-brand.svg';
 
@@ -32,7 +31,7 @@ interface IPropsNavbarLinkItem {
 }
 
 export function NavbarLink(props: IPropsNavbarLinkItem): JSX.Element {
-	const { to, className } = props;
+	const { to } = props;
 	return (
 		<NavLink to={to} className={({ isActive }) => (isActive ? 'link active ' : '')}>
 			{props.children}
@@ -41,7 +40,6 @@ export function NavbarLink(props: IPropsNavbarLinkItem): JSX.Element {
 }
 
 const ContentLinks = ({ openNavbar }: { openNavbar: VoidFunction }): JSX.Element => {
-	const navigate = useNavigate();
 	return (
 		<div className='flex'>
 			<div className='items-center flex mobile:mr-auto gap-12 mr-10'>

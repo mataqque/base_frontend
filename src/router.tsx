@@ -14,7 +14,7 @@ const router = createBrowserRouter([
 		],
 	},
 ]);
-export default function RoutesDom(props: unknown): JSX.Element {
+export default function RoutesDom(_props: unknown): JSX.Element {
 	return (
 		<AnimatePresence>
 			<RouterProvider router={router} />

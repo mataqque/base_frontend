@@ -2,7 +2,7 @@ import { type IProject, validWhatsapp } from '../../store.interface';
 import renderDalias from '@/assets/multimedia/imagenes/dalia.png';
 export const DALIAS: IProject = {
 	project_id: 3,
-	project_name: 'Monte Sierpe',
+	project_name: 'Dalias',
 	contact: '123456',
 	whatsapp: validWhatsapp('+51123456789'),
 	tipologies: 'Vivienda',

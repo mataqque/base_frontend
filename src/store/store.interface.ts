@@ -25,7 +25,7 @@ export const validWhatsapp = (phone: string): INumberWhatsapp | null => {
 	};
 };
 
-export type IName = 'Castilla' | 'Monte Sierpe';
+export type IName = 'Castilla' | 'Monte Sierpe' | 'Wiese' | 'Dalias';
 export type IStage = 'Proximamente' | 'En Construcción' | 'En Lanzamiento' | 'Preventa' | 'Entrega Inmediata' | 'Vendido' | 'Inicio de Obra' | 'Próx. Entrega';
 export type UniqueProjectName = string & { readonly _unique: unique symbol };
 export interface IProjectBase {

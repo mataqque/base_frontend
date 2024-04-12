@@ -1,6 +1,6 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 import projectsSlice from './slice/projectsSlice';
-import { IDash, type IProject } from './store.interface';
+import { type IProject } from './store.interface';
 
 // const middleware = [filesManageApi.middleware, categoryApi.middleware, notesApi.middleware]
 

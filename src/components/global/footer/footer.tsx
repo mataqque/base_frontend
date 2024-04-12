@@ -1,7 +1,7 @@
 import logo from '@/assets/multimedia/icons/icon-brand.svg';
 import { Link } from 'react-router-dom';
 
-export const Footer = (props: any): JSX.Element => {
+export const Footer = (): JSX.Element => {
 	return (
 		<footer className='footer bg-primary'>
 			<div className='container flex flex-row py-10 sm:flex-wrap md:flex-nowrap'>

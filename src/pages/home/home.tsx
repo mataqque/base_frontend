@@ -1,17 +1,15 @@
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
-import { type RootState } from '../../store/store';
 import { selectProjects } from '../../store/slice/projectsSlice';
 import { type IProject } from '../../store/store.interface';
 import { SectionBanner } from './banner/banner';
-import { type Project, data } from '../../store/slice/data/combine';
 import { CardProject } from '@/components/global/cardProject/cardProject';
 
 export const Home = (): React.ReactNode => {
 	const data = useSelector(selectProjects);
 	return (
 		<div className='text-1/5 '>
-			<SectionBanner></SectionBanner>
+			{/* <SectionBanner></SectionBanner> */}
 			<motion.h2
 				key='title-home'
 				initial={{ y: -10, opacity: 0 }}
