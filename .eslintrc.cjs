@@ -33,6 +33,8 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-require-imports": "off",
+    "@typescript-eslint/naming-convention": "off" ,
+    "@typescript-eslint/strict-boolean-expressions": "off"
     
   },
   settings: {

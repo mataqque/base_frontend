@@ -31,10 +31,14 @@ export type UniqueProjectName = string & { readonly _unique: unique symbol };
 export interface IProjectBase {
 	project_id: number;
 	project_name: string;
-	address: string;
 	contact: string;
 	whatsapp: INumberWhatsapp | null;
 	tipologies: string;
+	render: string;
+	meters: { from: number; to: number };
+	dorms: string[];
+	district: string;
+	address: string;
 }
 
 // export interface IProjectPhase<T extends IStage> extends IProjectBase {
@@ -55,11 +59,15 @@ export interface IProjectEnLanzamiento extends IProjectBase {
 	status: 'En Lanzamiento';
 }
 
+export interface IProjectEnPreventa extends IProjectBase {
+	status: 'En Preventa';
+}
+
 export interface IProjectEnConstruccion extends IProjectBase {
 	status: 'En Construcción';
 	slider: string[];
 }
-export type IProject = IProjectProximamente | IProjectEnConstruccion | IProjectEnLanzamiento;
+export type IProject = IProjectProximamente | IProjectEnConstruccion | IProjectEnLanzamiento | IProjectEnPreventa;
 
 // export const createUniqueProjectName = (name: string): UniqueProjectName => {
 // 	return name as UniqueProjectName;

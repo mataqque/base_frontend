@@ -1,0 +1,30 @@
+.mask {
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: 100%;
+	-webkit-mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: contain;
+	width: 100%;
+	height: 100%;
+}
+.mask-left {
+	mask-repeat: no-repeat;
+	mask-position: left;
+	mask-size: contain;
+}
+.mask-center {
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: contain;
+}
+.mask-right {
+	mask-repeat: no-repeat;
+	mask-position: right;
+	mask-size: contain;
+}
+.icon-brand {
+	mask-image: url('../multimedia/icons/icon-brand.svg');
+}

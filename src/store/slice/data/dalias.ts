@@ -1,15 +1,15 @@
 import { type IProject, validWhatsapp } from '../../store.interface';
-import renderCastilla from '@/assets/multimedia/imagenes/castilla.png';
-export const CASTILLA: IProject = {
-	project_id: 4,
+import renderDalias from '@/assets/multimedia/imagenes/dalia.png';
+export const DALIAS: IProject = {
+	project_id: 3,
 	project_name: 'Monte Sierpe',
-	status: 'En Preventa',
 	contact: '123456',
 	whatsapp: validWhatsapp('+51123456789'),
 	tipologies: 'Vivienda',
+	status: 'En Lanzamiento',
 	district: 'Surco',
-	address: 'CA. JUAN CASTILLA 898',
+	address: 'CA. DALIAS 196',
 	dorms: ['1'],
 	meters: { from: 1, to: 100 },
-	render: renderCastilla,
+	render: renderDalias,
 };
