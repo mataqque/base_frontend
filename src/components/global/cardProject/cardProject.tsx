@@ -2,6 +2,7 @@ import Skeleton from 'react-loading-skeleton';
 import { useState } from 'react';
 import { type IProject } from '@/store/store.interface';
 import { motion } from 'framer-motion';
+import './card.scss';
 
 interface IProps {
 	dataindex: number;
@@ -19,21 +20,29 @@ export const CardProject = ({ dataItem, dataindex }: IProps): JSX.Element => {
 			animate={{ y: 0, opacity: 1 }}
 			exit={{ y: 0, opacity: 0 }}
 			transition={{ duration: 1, type: 'tween', delay: 0.1 * dataindex, ease: 'easeOut' }}
-			className='content-card w-full'
+			className='content-card w-full overflow-hidden relative '
 		>
-			<div className='card-item mb-4'>
-				{status && (
-					<>
-						<div className={`item-fase OktaNeue-Normal`}>
-							{activeSkeleton ? <Skeleton height={'20px'} width={'100px'} baseColor='#ffffff16' highlightColor='#2ab1ab00'></Skeleton> : <>{status}</>}
-						</div>
-						{/* <div className='content-brand mask' style={{ WebkitMaskImage: `url(${icon_brand})` }}></div> */}
-					</>
-				)}
-				<div className={`content-render ${status === 'Proximamente' ? 'prox' : ''}`}>
+			<div className='card-item mb-4 overflow-hidden relative'>
+				<div className='content-render relative'>
+					<div className='elipse-card w-[5rem] h-[2.5rem] bg-primary absolute top-[1rem] left-[1rem] rounded-full flex items-center justify-center px-3'>
+						<img src={dataItem.logoCard} alt='' />
+					</div>
 					<img className='render' src={render}></img>
 					<div className='fase-content'>
 						<div className='fase b-'></div>
+					</div>
+					<div className='shadow-card absolute top-0 w-full h-full bg-[#123237cb] flex items-center justify-center flex-col gap-10'>
+						<img src={dataItem.logoCard} alt='' className='w-[8rem] logo-shadow' />
+						<div className='info-shadow flex gap-4'>
+							<div className='flex flex-col'>
+								<span className='text-white font-poppins_light'>Depas</span>
+								<span className='text-white text-1/3'>2 y 3 Dorms.</span>
+							</div>
+							<div className='flex flex-col'>
+								<span className='text-white font-poppins_light'>Desde</span>
+								<span className='text-white text-1/3'>s/100000</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -30,6 +30,7 @@ export type IStage = 'Proximamente' | 'En Construcción' | 'En Lanzamiento' | 'P
 export type UniqueProjectName = string & { readonly _unique: unique symbol };
 export interface IProjectBase {
 	project_id: number;
+	link: string;
 	project_name: string;
 	contact: string;
 	whatsapp: INumberWhatsapp | null;
@@ -39,17 +40,9 @@ export interface IProjectBase {
 	dorms: string[];
 	district: string;
 	address: string;
+	logo: string;
+	logoCard: string;
 }
-
-// export interface IProjectPhase<T extends IStage> extends IProjectBase {
-// 	status: T;
-// }
-
-// export interface IProjectConstruccion extends IProjectPhase<'En Construcción'> {
-// 	slider: string[];
-// }
-
-// export type IProject = IProjectPhase<IStage>;
 
 export interface IProjectProximamente extends IProjectBase {
 	status: 'Proximamente';

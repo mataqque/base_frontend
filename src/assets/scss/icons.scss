@@ -7,8 +7,6 @@
 	-webkit-mask-repeat: no-repeat;
 	-webkit-mask-position: center;
 	-webkit-mask-size: contain;
-	width: 100%;
-	height: 100%;
 }
 .mask-left {
 	mask-repeat: no-repeat;
@@ -27,4 +25,15 @@
 }
 .icon-brand {
 	mask-image: url('../multimedia/icons/icon-brand.svg');
+}
+.icon-instagram {
+	mask-image: url('../multimedia/icons/instagram-icon.svg');
+}
+
+.icon-facebook {
+	mask-image: url('../multimedia/icons/facebook-icon.svg');
+}
+
+.icon-book {
+	mask-image: url('../multimedia/icons/book.svg');
 }

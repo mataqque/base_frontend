@@ -4,12 +4,14 @@ import { selectProjects } from '../../store/slice/projectsSlice';
 import { type IProject } from '../../store/store.interface';
 import { SectionBanner } from './banner/banner';
 import { CardProject } from '@/components/global/cardProject/cardProject';
+import imageFamily from '@/assets/multimedia/imagenes/familia.png';
+import { Contact } from './contact/contact';
 
 export const Home = (): React.ReactNode => {
 	const data = useSelector(selectProjects);
 	return (
 		<div className='text-1/5 '>
-			{/* <SectionBanner></SectionBanner> */}
+			<SectionBanner></SectionBanner>
 			<motion.h2
 				key='title-home'
 				initial={{ y: -10, opacity: 0 }}
@@ -20,9 +22,15 @@ export const Home = (): React.ReactNode => {
 			>
 				Elige hoy tu próximo departamento
 			</motion.h2>
-			<div className='container'>
-				<ProjectsAvailable data={Array.from(data.values())}></ProjectsAvailable>
+			<div className='bg-#E9E8E8 w-full'>
+				<div className='container'>
+					<ProjectsAvailable data={Array.from(data.values())}></ProjectsAvailable>
+				</div>
+				<div className='w-full'>
+					<img src={imageFamily} alt='' className='w-full' />
+				</div>
 			</div>
+			<Contact></Contact>
 		</div>
 	);
 };

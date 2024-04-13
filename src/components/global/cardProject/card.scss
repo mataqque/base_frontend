@@ -1,0 +1,48 @@
+.content-card {
+	.elipse-card {
+		opacity: 1;
+		transition: 0.7s opacity ease-out;
+	}
+	.shadow-card {
+		opacity: 0;
+		transition: 0.2s opacity ease-in;
+		.logo-shadow {
+			opacity: 0;
+			transform-origin: bottom;
+			transform: scale(0.8) translateY(10px);
+			transition:
+				0.2s transform 0.1s ease-in,
+				0.2s opacity 0s linear;
+		}
+		.info-shadow {
+			opacity: 0;
+			transform-origin: bottom;
+			transform: scale(0.8) translateY(30px);
+			transition:
+				0.2s transform 0.1s ease-in,
+				0.2s opacity 0.3s linear;
+		}
+	}
+	.render {
+		transition: 0.2s transform;
+	}
+	&:hover {
+		.elipse-card {
+			opacity: 0;
+		}
+		.shadow-card {
+			opacity: 1;
+			.logo-shadow {
+				opacity: 1;
+				transform: scale(1) translateY(0);
+			}
+			.info-shadow {
+				opacity: 1;
+				transform: scale(1) translateY(0);
+			}
+		}
+		.render {
+			transform: scale(1.3);
+		}
+	}
+}
