@@ -4,7 +4,7 @@ import logoDalias from '@/assets/multimedia/icons/card/elipse-dalias.svg?url';
 export const DALIAS: IProject = {
 	project_id: 3,
 	link: '/dalias',
-	project_name: 'Dalias',
+	project_name: 'example',
 	logo: '',
 	logoCard: logoDalias,
 	contact: '123456',

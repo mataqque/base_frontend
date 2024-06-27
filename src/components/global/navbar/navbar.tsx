@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './navbar.scss';
 import { Link, NavLink } from 'react-router-dom';
 import { changeActive } from '@/helpers/helpers';
-import brand from '@/assets/multimedia/icons/icon-brand.svg';
 
 export default function Navbar(): JSX.Element {
 	const [open, setOpen] = useState<string>('');
@@ -16,7 +15,7 @@ export default function Navbar(): JSX.Element {
 		<div className={'flex h-[6rem]'}>
 			<div className='container flex justify-between'>
 				<Link to='/' className='bold h-full flex items-center justify-center w-[7rem] h-[3rem]'>
-					<img className='w-full h-full' src={brand}></img>
+					<div className='w-full h-full bg-gray-300 text-white flex items-center justify-center text-1/4'>Logo</div>
 				</Link>
 				<ContentLinks openNavbar={openNavbar}></ContentLinks>
 			</div>
@@ -79,7 +78,7 @@ const ContentLinks = ({ openNavbar }: { openNavbar: VoidFunction }): JSX.Element
 					to='/ecommerce'
 					className='animation-btn gap-2 rounded-full cursor-pointer h-12 text-1/1xl w-max bg-secondary flex items-center justify-center px-6 py-1 text-white leading-tight font-poppins_thin whitespace-nowrap	'
 				>
-					¡Elige tu depa! <div className='icon-signal-right mask bg-primary w-4 h-4 ml-2'></div>
+					Contacto <div className='icon-signal-right mask bg-primary w-4 h-4 ml-2'></div>
 				</Link>
 			</div>
 		</div>

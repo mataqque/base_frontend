@@ -4,8 +4,8 @@ import logoWiese from '@/assets/multimedia/icons/card/elipse-wiese.svg?url';
 
 export const WIESE: IProject = {
 	project_id: 1,
-	link: '/weise',
-	project_name: 'Wiese',
+	link: '/example',
+	project_name: 'example',
 	logo: '',
 	logoCard: logoWiese,
 	contact: '123456',

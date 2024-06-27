@@ -4,7 +4,7 @@ import logoSierpe from '@/assets/multimedia/icons/card/elipse-monte-sierpe.svg?u
 export const MONTESIERPE: IProject = {
 	project_id: 2,
 	link: '/monte-sierpe',
-	project_name: 'Monte Sierpe',
+	project_name: 'example',
 	logo: '',
 	logoCard: logoSierpe,
 	contact: '123456',

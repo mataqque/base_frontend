@@ -1,4 +1,3 @@
-import logo from '@/assets/multimedia/icons/icon-brand.svg';
 import { getNumberAdress } from '@/helpers/helpers';
 import { selectProjects } from '@/store/slice/projectsSlice';
 import { useSelector } from 'react-redux';
@@ -13,7 +12,7 @@ export const Footer = (): JSX.Element => {
 				<div className='flex flex-row py-10 sm:flex-wrap md:flex-nowrap'>
 					<div className='content-brand '>
 						<div className='w-[10rem] h-[5rem]'>
-							<img src={logo} alt='' className='w-full h-full' />
+							<div className='w-full h-full bg-gray-300 text-white flex items-center justify-center text-1/4'>Logo</div>
 						</div>
 					</div>
 					<div className='flex content-column ml-auto mr-[6rem] mobile:gap-12 mobile:align-start mobile:justify-start gap-10'>
@@ -30,11 +29,11 @@ export const Footer = (): JSX.Element => {
 						</div>
 						<div className='column flex flex-col'>
 							<span className='t-column IBMPlexSans-Bold text-white mobile:text-left uppercase font-poppins_regular mb-4'>CONTACTO</span>
-							<a href={'mail:correocorporativo@make.pe'} className='sub-t-column text-white mobile:text-left hover:opacity-100 '>
-								correocorporativo@make.pe
+							<a href={'mail:example@example.pe'} className='sub-t-column text-white mobile:text-left hover:opacity-100 '>
+								example@example.pe
 							</a>
-							<a href={'tel:+5193379082'} className='sub-t-column text-white mobile:text-left hover:opacity-100 '>
-								01 337 9082
+							<a href={'tel:+01 123 1234'} className='sub-t-column text-white mobile:text-left hover:opacity-100 '>
+								01 123 1234
 							</a>
 							<a href={'https://maps.app.goo.gl/EnmPy8EXq8n6RFqb9'} className='sub-t-column text-white mobile:text-left hover:opacity-100 '>
 								Av. Primavera 609 - Int. 301,<br></br> San Borja, Lima, Perú.
@@ -44,14 +43,14 @@ export const Footer = (): JSX.Element => {
 					<div className='flex flex-col'>
 						<div className='flex mb-8 justify-end mobile:justify-start sm:justify-center'>
 							<a
-								href='https://www.facebook.com/InmobiliariaPromsal'
+								href='#'
 								target='_blank'
 								className='rounded-full flex items-center justify-center w-14 h-14 duration-300 cursor-pointer mr-4 border  border-solid border-[#1d5158] hover:bg-primary group overflow-hidden'
 							>
 								<div className='icon-mask icon-facebook h-5 w-5 mask bg-white group-hover:bg-white duration-300'></div>
 							</a>
 							<a
-								href='https://www.instagram.com/promsalinmobiliaria/'
+								href='#'
 								target='_blank'
 								className='rounded-full flex items-center justify-center w-14 h-14 duration-300 cursor-pointer mr-4 border border-[#1d5158] border-solid hover:bg-primary hover:text-white group'
 							>
@@ -87,11 +86,11 @@ export const Footer = (): JSX.Element => {
 					</Link>
 				</div>
 				<div className='mobile:order-3 py-6 flex justify-between'>
-					<span className='text-white text-0/8xl'>Copyright © {new Date().getFullYear()} Make Inmobiliaria. Todos los derechos reservados</span>
+					<span className='text-white text-0/8xl'>Copyright © {new Date().getFullYear()} example. Todos los derechos reservados</span>
 					<span className='text-white text-0/8xl'>
 						Created with ♥ by{' '}
-						<a href='https://www.formulaperu.com/' target='_blank'>
-							Fórmula
+						<a href='' target='_blank'>
+							example
 						</a>
 					</span>
 				</div>

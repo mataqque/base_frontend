@@ -4,7 +4,7 @@ import logoCastilla from '@/assets/multimedia/icons/card/elipse-castilla.svg?url
 export const CASTILLA: IProject = {
 	project_id: 4,
 	link: '/castilla',
-	project_name: 'Castilla',
+	project_name: 'example',
 	logo: '',
 	logoCard: logoCastilla,
 	district: 'Surco',
