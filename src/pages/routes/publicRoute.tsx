@@ -5,9 +5,9 @@ import { Outlet } from 'react-router';
 export const PublicRoute = (): JSX.Element => {
 	return (
 		<div className='public'>
-			<Navbar></Navbar>
+			{/* <Navbar></Navbar> */}
 			<Outlet></Outlet>
-			<Footer></Footer>
+			{/* <Footer></Footer> */}
 		</div>
 	);
 };
