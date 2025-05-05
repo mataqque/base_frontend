@@ -198,6 +198,7 @@ export const AudioStreamPlayer = () => {
 	};
 
 	return (
+		// eslint-disable-next-line @typescript-eslint/no-confusing-void-expression
 		<div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto' }} onClick={() => !userInteracted && setUserInteracted(true)}>
 			<h2>Audio Stream Player</h2>
 			<div
